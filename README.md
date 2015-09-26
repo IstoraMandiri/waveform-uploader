@@ -14,7 +14,6 @@ v 0
   - PNG Destination
   - Use waveforms as upload % indicator
 
-
 v 1
 - UI For editing waveform settings
 - MP3 Conversion

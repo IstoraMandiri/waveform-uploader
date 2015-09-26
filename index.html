@@ -3,12 +3,23 @@
   <head>
     <title>Hello World!</title>
     <script src="waveform-creation.coffee"></script>
-    <script src="ftps-upload.coffee"></script>
+    <script src="ftp-upload.coffee"></script>
     <style>
-      img{
-        max-width:100%;
+      .upload-bar, .back-bar, .front-bar{
         width:875px;
         height:85px;
+      }
+      .upload-bar{
+        margin:10px;
+        position:relative;
+      }
+      .back-bar, .front-bar{
+        background-size:875px 85px;
+        position:absolute;
+        transition: width 8s ease;
+      }
+      .front-bar.complete{
+       transition: width 1s ease;
       }
     </style>
   </head>
@@ -19,7 +30,11 @@
 
     <hr>
     <input type="file" class='waveform-upload'>
-    <span class='status'></span>
+    <span class='status-box'></span>
     <hr>
+    <div class="upload-bar">
+      <div class="back-bar"></div>
+      <div class="front-bar complete"></div>
+    </div>
   </body>
 </html>
