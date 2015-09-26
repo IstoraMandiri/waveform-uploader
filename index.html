@@ -3,13 +3,23 @@
   <head>
     <title>Hello World!</title>
     <script src="waveform-creation.coffee"></script>
+    <script src="ftps-upload.coffee"></script>
+    <style>
+      img{
+        max-width:100%;
+        width:875px;
+        height:85px;
+      }
+    </style>
   </head>
   <body>
     <h1>Hello World!</h1>
     We are using io.js <script>document.write(process.version)</script>
     and Electron <script>document.write(process.versions['electron'])</script>.
 
+    <hr>
     <input type="file" class='waveform-upload'>
-
+    <span class='status'></span>
+    <hr>
   </body>
 </html>
