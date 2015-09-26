@@ -1,0 +1,9 @@
+{
+  "name": "your-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-compile": "^0.9.2",
+    "waveform": "^3.0.0"
+  }
+}
