@@ -1,6 +1,4 @@
 $ = require 'jquery'
-waveform = require 'waveform'
-fs = require 'fs'
 async = require 'async'
 request = require 'request'
 JSFtp = require 'jsftp'
