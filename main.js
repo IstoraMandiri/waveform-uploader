@@ -24,13 +24,13 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1400, height: 600, resizable: false});
+  mainWindow = new BrowserWindow({width: 870, height: 380, resizable: false});
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
 
   // Open the DevTools.
-  mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

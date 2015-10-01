@@ -1,0 +1,67 @@
+body{
+  background:black;
+  color:#F5FF00;
+  font-family:sans-serif;
+}
+
+h1{
+  font-weight: bold;
+  margin:0;
+}
+
+container{
+  margin:auto;
+  display:block;
+  margin:20px;
+}
+
+section{
+  margin-bottom:2em;
+  clear:both;
+}
+
+input[type='text'],
+input[type='password'] {
+  background-color: #333;
+  padding: 7px;
+  font-size:1.2em;
+  color: #fff;
+  width: 130px;
+  border:1px solid #222;
+}
+input[name='host']{
+  width:170px;
+}
+.col{
+  float:left;
+  padding:10px;
+  box-sizing:border-box;
+}
+.col.w30{
+  width:30%;
+}
+.col.w70{
+  width:70%;
+}
+
+.upload-bar, .back-bar, .front-bar{
+  width:775px;
+  height:75px;
+}
+.upload-bar{
+  margin:0px 10px;
+  position:relative;
+}
+.back-bar, .front-bar{
+  background-size:775px 75px;
+  background-position:center left;
+  position:absolute;
+  transition: width 8s ease;
+}
+.front-bar.complete{
+ transition: width 1s ease;
+}
+
+.ftp-settings{
+  margin-bottom:20px;
+}

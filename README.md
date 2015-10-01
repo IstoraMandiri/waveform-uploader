@@ -3,16 +3,21 @@
 
 ### Desktop App for Creating Waveforms and Uploading them Somewhere
 
+## Install Dependenceis
+
+```
+brew install libgroove;
+npm install waveform -g;
+```
 
 ## TODO
 
 ```
 v 0
-- FTP Upload Config
+- FTP Upload Configs
   - FTP Login Creds
-  - MP3 Destination
-  - PNG Destination
-  - Use waveforms as upload % indicator
+
+
 
 v 1
 - UI For editing waveform settings
