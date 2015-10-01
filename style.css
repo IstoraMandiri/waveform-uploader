@@ -1,12 +1,16 @@
 body{
   background:black;
-  color:#F5FF00;
-  font-family:sans-serif;
+  color:#D1D1D1;
+  font-family:Helvetica, sans-serif;
 }
 
 h1{
   font-weight: bold;
   margin:0;
+}
+
+h1, .status-box{
+  color:#F5FF00;
 }
 
 container{
@@ -23,11 +27,12 @@ section{
 input[type='text'],
 input[type='password'] {
   background-color: #333;
-  padding: 7px;
+  padding: 9px;
   font-size:1.2em;
   color: #fff;
-  width: 130px;
+  width: 150px;
   border:1px solid #222;
+  margin:10px 10px 0px 0px;
 }
 input[name='host']{
   width:170px;
@@ -44,16 +49,16 @@ input[name='host']{
   width:70%;
 }
 
-.upload-bar, .back-bar, .front-bar{
-  width:775px;
-  height:75px;
+.upload-bar, .back-bar, .front-bar, svg{
+  width:875px;
+  height:85px;
 }
 .upload-bar{
   margin:0px 10px;
   position:relative;
 }
 .back-bar, .front-bar{
-  background-size:775px 75px;
+  background-size:875px 85px;
   background-position:center left;
   position:absolute;
   transition: width 8s ease;

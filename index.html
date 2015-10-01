@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Meoko Mixes Uploader</title>
-    <script src="waveform-creation.coffee"></script>
-    <script src="ftp-upload.coffee"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lib/WaveformGenerator.js"></script>
+    <script src="waveform-creation.coffee"></script>
   </head>
   <body>
     <container>
@@ -12,6 +12,9 @@
         <div class="col w30">
           <h1>Meoko Uploader</h1>
           <p>Upload an MP3 of your choice to be automatically converted to waveforms and uploaded</p>
+          <p>
+            <span class='status-box'></span>
+          </p>
         </div>
         <div class="col w70">
           <div class="ftp-settings">
@@ -36,15 +39,12 @@
       <section>
         <div class="col">
           <input type="file" class='waveform-upload'>
-          <span class='status-box'></span>
         </div>
       </section>
 
       <section class="upload-bar">
-        <div class="col">
-          <div class="back-bar"></div>
-          <div class="front-bar complete"></div>
-        </div>
+        <div class="back-bar"></div>
+        <div class="front-bar complete"></div>
       </section>
     </container>
   </body>
