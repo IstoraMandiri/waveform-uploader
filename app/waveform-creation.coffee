@@ -3,6 +3,13 @@ async = require 'async'
 request = require 'request'
 JSFtp = require 'jsftp'
 
+
+oldConsole = console.log
+console.log = (args...) ->
+  oldConsole.apply(this)
+  $('#fake-console').prepend "<div>#{JSON.stringify(args)}</div>"
+
+
 generateWaveform = (file, options={}, callback) ->
   fileReader  = new FileReader
   fileReader.onload = ->
@@ -49,6 +56,8 @@ getBufferFromDataUrl = (url) ->
 
 $(document).ready ->
   $status = $('.status-box')
+
+  console.log "waveform creation loaded"
 
   for type in ['mixes', 'waveforms']
     thisDataString = localStorage["loginDetails_#{type}"]
