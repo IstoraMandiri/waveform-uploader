@@ -4,10 +4,10 @@ request = require 'request'
 JSFtp = require 'jsftp'
 
 
-oldConsole = console.log
-console.log = (args...) ->
-  oldConsole.apply(this)
-  $('#fake-console').prepend "<div>#{JSON.stringify(args)}</div>"
+# oldConsole = console.log
+# console.log = (args...) ->
+#   oldConsole.apply(this)
+#   $('#fake-console').prepend "<div>#{JSON.stringify(args)}</div>"
 
 
 generateWaveform = (file, options={}, callback) ->
